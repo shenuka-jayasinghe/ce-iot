@@ -28,8 +28,9 @@ resource "aws_lb_listener_rule" "heating_rule" {
 
   condition {
     path_pattern {
-      values = ["/heating/*"]
+      values = ["/api/heating"]
     }
   }
+
 }
 

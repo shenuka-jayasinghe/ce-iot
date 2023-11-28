@@ -30,5 +30,6 @@ resource "aws_lb_listener_rule" "status_rule" {
       values = ["/status/*"]
     }
   }
+
 }
 

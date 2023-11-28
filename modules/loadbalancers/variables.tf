@@ -13,3 +13,7 @@ variable "security_groups" {
 variable "subnet_ids" {
   type = list(string)
 }
+
+variable "instance_ips" {
+  type = list(string)
+}

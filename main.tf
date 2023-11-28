@@ -22,6 +22,7 @@ module "load_balancer" {
   source = "./modules/loadbalancers"
   vpc_id = module.networks.vpc_id
   instance_ids = module.servers.instance_ids
-  security_groups = [module.security.server_security_group_id]
+  security_groups = [module.security.lb_security_group_id]
   subnet_ids = module.networks.public_subnets
+  instance_ips = module.servers.public_ips
 }

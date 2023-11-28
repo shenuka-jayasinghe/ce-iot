@@ -27,8 +27,11 @@ resource "aws_lb_listener_rule" "lights_rule" {
 
   condition {
     path_pattern {
-      values = ["/lights/*"]
+      values = ["/api/lights"]
     }
   }
+
+  
 }
+
 
