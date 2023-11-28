@@ -1,0 +1,6 @@
+node_modules
+.terraform
+*.tfvars
+*.tfstate*
+*.pem
+.ssh/
