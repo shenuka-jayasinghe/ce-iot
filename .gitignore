@@ -4,3 +4,4 @@ node_modules
 *.tfstate*
 *.pem
 .ssh/
+public-ips.txt 

@@ -18,7 +18,7 @@ resource "aws_lb_target_group_attachment" "lights_tg_attachment" {
 }
 
 resource "aws_lb_listener_rule" "lights_rule" {
-  listener_arn = aws_lb_listener.microservice
+  listener_arn = aws_lb_listener.microservice.arn
 
   action {
     type             = "forward"

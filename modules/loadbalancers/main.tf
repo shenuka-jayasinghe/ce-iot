@@ -1,13 +1,11 @@
 
 
 resource "aws_lb" "load_balancer" {
-  name               = "nc-sprint-load-balancer"
+  name               = "microservices"
   internal           = false
   load_balancer_type = "application"
   security_groups    = var.security_groups
   subnets            = [for subnet_id in var.subnet_ids : subnet_id]
-
-  enable_deletion_protection = true
 
   tags = {
     Environment = "production"

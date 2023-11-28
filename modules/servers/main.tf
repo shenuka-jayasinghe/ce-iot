@@ -5,7 +5,7 @@ resource "aws_instance" "app_server" {
   subnet_id     = var.public_subnets[count.index]
 
   tags = {
-    Name = "app_server_00${count.index + 1}"
+    Name = "microservice_00${count.index + 1}"
   }
   associate_public_ip_address = true
   vpc_security_group_ids      = [var.security_group_id]
