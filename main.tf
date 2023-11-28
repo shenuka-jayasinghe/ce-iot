@@ -16,6 +16,7 @@ module "servers" {
   source = "./modules/servers"
   public_subnets = module.networks.public_subnets
   security_group_id = module.security.server_security_group_id
+  security_key = var.security_key
 }
 
 module "load_balancer" {

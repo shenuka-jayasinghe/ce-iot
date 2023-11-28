@@ -9,5 +9,5 @@ resource "aws_instance" "app_server" {
   }
   associate_public_ip_address = true
   vpc_security_group_ids      = [var.security_group_id]
-  key_name                    = "terraform-key"
+  key_name                    = var.security_key
 }
